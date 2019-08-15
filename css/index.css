@@ -171,27 +171,37 @@ img {
 .navBar {
   width: 100%;
   display: flex;
-  color: #212529;
   border-bottom: #C0C0C0 2px dashed;
 }
 .navBar nav {
-  width: 20%;
+  width: 42%;
   margin: auto;
-  padding: 10px 0;
+  padding: 1% 0;
   display: flex;
 }
 .navBar nav .fun-bus-logo {
   display: flex;
   justify-content: flex-start;
-  width: 40%;
-  font-size: 10px;
+  width: 56%;
   font-family: Indie Flower;
+}
+.navBar nav .fun-bus-logo h1 {
+  color: #212529;
+  font-size: 4rem;
 }
 .navBar nav .navLinks {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  width: 42%;
+}
+.navBar nav .navLinks a {
+  color: #212529;
+  font-size: 1.6rem;
   text-decoration: none;
-  width: 60%;
+}
+.navBar nav .navLinks a:visited {
+  color: #212529;
 }
 .home .greeting {
   margin: 3% 0;

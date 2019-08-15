@@ -3,27 +3,40 @@
 .navBar{
     width: 100%;
     display: flex;
-    color: @font-color;
+    
     border-bottom: @navigation-border 2px dashed;
     
     nav{
-        width: 20%;
+        width: 42%;
         margin: auto;
-        padding: 10px 0;
+        padding: 1% 0;
         display: flex;
         
         .fun-bus-logo{
             display: flex;
             justify-content: flex-start;
-            width: 40%;
-            font-size: 10px;
+            width: 56%;
+                      
             font-family: Indie Flower;
+            h1{
+                color: @font-color;
+                font-size: 4rem;
+            }
         }
         .navLinks{
             display: flex;
-            justify-content: flex-end;
-            text-decoration: none;
-            width: 60%;
+            justify-content: space-around;
+            align-items: center;
+            
+            width: 42%;
+            a{
+                color: @font-color;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+            a:visited{
+                color:@font-color;
+            }
         }
         
     }
