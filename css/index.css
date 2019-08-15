@@ -170,7 +170,6 @@ img {
 }
 .navBar {
   width: 100%;
-  display: flex;
   border-bottom: #C0C0C0 2px dashed;
 }
 .navBar nav {
@@ -179,21 +178,47 @@ img {
   padding: 1% 0;
   display: flex;
 }
+@media (max-width: 500px) {
+  .navBar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .navBar nav .fun-bus-logo {
   display: flex;
   justify-content: flex-start;
   width: 56%;
   font-family: Indie Flower;
 }
+@media (max-width: 500px) {
+  .navBar nav .fun-bus-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+  }
+}
 .navBar nav .fun-bus-logo h1 {
   color: #212529;
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .navBar nav .fun-bus-logo h1 {
+    font-size: 3rem;
+  }
 }
 .navBar nav .navLinks {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 42%;
+}
+@media (max-width: 500px) {
+  .navBar nav .navLinks {
+    padding: 2%;
+    width: 100%;
+  }
 }
 .navBar nav .navLinks a {
   color: #212529;
@@ -203,9 +228,20 @@ img {
 .navBar nav .navLinks a:visited {
   color: #212529;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 0 4%;
+  }
+}
 .home .greeting {
   margin: 3% 0;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .greeting {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .greeting p {
   padding: 2% 0;
@@ -252,9 +288,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media mobile {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media mobile {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .btn {
   border-radius: 10px;
