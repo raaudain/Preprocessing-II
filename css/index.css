@@ -173,7 +173,7 @@ img {
   border-bottom: #C0C0C0 2px dashed;
 }
 .navBar nav {
-  width: 42%;
+  width: 80rem;
   margin: auto;
   padding: 1% 0;
   display: flex;
@@ -238,6 +238,9 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
+  .home .greeting {
+    padding-bottom: 20px;
+  }
   .home .greeting h1 {
     font-size: 3.2rem;
   }
